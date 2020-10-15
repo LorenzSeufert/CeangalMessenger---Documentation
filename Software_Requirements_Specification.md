@@ -1,4 +1,4 @@
-# littleBeasts - Software Requirements Specification
+# Software Requirements Specification
 
 ## Table of Contents
 
