@@ -1,4 +1,4 @@
-# Software Requirements Specification
+# Ceangal-Messenger -- Software Requirements Specification
 
 ## Table of Contents
 
