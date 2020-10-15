@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
--   [Flashcard Community - Software Requirements Specification](#flashcard-community---software-requirements-specification)
+-   [Software Requirements Specification](software-requirements-specification)
 
     -   [Table of Contents](#table-of-contents)
 
