@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
--   [Software Requirements Specification](software-requirements-specification)
+-   Software Requirements Specification
 
     -   [Table of Contents](#table-of-contents)
 
