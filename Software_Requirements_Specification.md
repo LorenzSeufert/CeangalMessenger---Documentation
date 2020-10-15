@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
--   [Software Requirements Specification](software-requirements-specification)
+-   [Software Requirements Specification--Ceangal Messenger](software-requirements-specification--Ceangal Messenger)
 
     -   [Table of Contents](#table-of-contents)
 
@@ -133,8 +133,8 @@ Ceangal Messenger is a alternative to Discord and Teamspeak with self deployable
 ### 2.3 User characteristics
 
 ### 2.4 Dependencies
-- kotlin
-- electron (?)
+- Kotlin
+- Electron (?)
 
 ## 3. Specific Requirements
 
