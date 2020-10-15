@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
--   [Software Requirements Specification--Ceangal Messenger](software-requirements-specification--Ceangal Messenger)
+-   [Software Requirements Specification](software-requirements-specification)
 
     -   [Table of Contents](#table-of-contents)
 
