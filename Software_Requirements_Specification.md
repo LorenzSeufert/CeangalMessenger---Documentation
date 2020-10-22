@@ -119,7 +119,7 @@ Later on there should also be a voice channel.
 | [Blog](https://ceangalmessenger.wordpress.com/)                                                       | 15/10/2020 |
 | [GitHub --Code](https://github.com/LorenzSeufert/CeangalMessenger---Code)                             | 15/10/2020 |
 | [GitHub --Documentation](https://github.com/LorenzSeufert/CeangalMessenger---Documentation)           | 15/10/2020 |
-| [Use Case Diagram]()                                                                                  | 15/10/2020 |
+| [Use Case Diagram](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/usecase.png)                                                                                  | 15/10/2020 |
 
 ### 1.5 Overview
 
