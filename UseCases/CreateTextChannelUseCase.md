@@ -17,7 +17,7 @@ Every host of a server can create a text channel
 - Redirect on "text channel" page
 
 ### 2.1.1 Activity Diagram
-![Organization Application Activity Diagram](../Diagrams/UCs/CreateOperationActivityDiagramm.jpg)
+![Organization Application Activity Diagram](../Diagrams/CreateTextChannelDiagramm.png)
 
 ### 2.1.2 Mock-up
 ![Create Operation Form Wireframe](../Pictures/Wireframes/CreateOperation.png)
