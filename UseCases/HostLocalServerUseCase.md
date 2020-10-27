@@ -6,7 +6,7 @@ Host a local server temporally on your device.
 Tis kind of server is embedded in your Client.
 
 ## 2 Flow o Events
-##2.1 Basic Flow
+## 2.1 Basic Flow
 - User clicks in his overlay on "Host local server"
 - New Window shows up with fields for presettings
 - user fills fields like "Server Name" and "Password" and clicks Start
