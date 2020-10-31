@@ -4,20 +4,20 @@
 
 -   [1. Introduction](#1-introduction)
 
-        -   [1.1 Purpose](#11-purpose)
-        -   [1.2 Scope](#12-scope)
-        -   [1.3 Definitions, Acronyms and Abbreviations](#13-definitions-acronyms-and-abbreviations)
-        -   [1.4 References](#14-references)
-        -   [1.5 Overview](#15-overview)
+       -   [1.1 Purpose](#11-purpose)
+       -   [1.2 Scope](#12-scope)
+       -   [1.3 Definitions, Acronyms and Abbreviations](#13-definitions-acronyms-and-abbreviations)
+       -   [1.4 References](#14-references)
+       -   [1.5 Overview](#15-overview)
 
 -   [2. Overall Description](#2-overall-description)
 
-        -   [2.1 Vision](#21-vision)
+       -   [2.1 Vision](#21-vision)
 
    -   [2.2 Product perspective](#22-product-perspective)
 
-        -   [2.3 User characteristics](#23-user-characteristics)
-        -   [2.4 Dependencies](#24-dependencies)
+       -   [2.3 User characteristics](#23-user-characteristics)
+       -   [2.4 Dependencies](#24-dependencies)
 
 -   [3. Specific Requirements](#3-specific-requirements)
 
