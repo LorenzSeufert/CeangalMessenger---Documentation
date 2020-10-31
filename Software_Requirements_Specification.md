@@ -13,9 +13,7 @@
 -   [2. Overall Description](#2-overall-description)
 
        -   [2.1 Vision](#21-vision)
-
-   -   [2.2 Product perspective](#22-product-perspective)
-
+       -   [2.2 Product perspective](#22-product-perspective)
        -   [2.3 User characteristics](#23-user-characteristics)
        -   [2.4 Dependencies](#24-dependencies)
 
@@ -98,15 +96,7 @@ Later on there should also be a voice channel.
 | Term     |                                     |
 | -------- | ----------------------------------- |
 | **SRS**  | Software Requirements Specification |
-| **JSON** | JavaScript Object Notation          |
-| **API**  | Application Programming Interface   |
-| **MTBF** | Mean Time Between Failures          |
-| **MTTR** | Mean Time To Repair                 |
-| **DTO**  | Data Transfer Object                |
-| **HTTP** | Hypertext Transfer Protocol         |
-| **FAQ**  | Frequently Asked Questions          |
-| **REST** | Representational State Transfer     |
-| **DNA**  | Do Not Applicable                   |
+| **n/a**  | Not Applicable                      |
 | **TBD**  | To Be Determined                    |
 
 ### 1.4 References
@@ -125,7 +115,7 @@ Later on there should also be a voice channel.
 ### 2.1 Vision
 Ceangal Messenger is a alternative to Discord and Teamspeak with self deployable servers. This is a Project for DHBW Karlsruhe from Lorenz Seufert, Lennart Royl, David Bullinger and Fabian Dittebrand.
 
-## 2.2 Product perspective
+### 2.2 Product perspective
 
 ### 2.3 User characteristics
 
@@ -220,10 +210,10 @@ TBD
 - MongoDB (?)
 
 #### 3.7.2 Spring Boot
-DNA
+n/a
 
 #### 3.7.3 ReactJS
-DNA
+n/a
 
 #### 3.7.4 Supported Platforms
 - PC
