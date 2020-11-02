@@ -24,28 +24,24 @@ Every host of a server can create a text channel
 
 ### 2.1.3 Narrative
 ```gherkin
-Feature: edit user profile
+Feature: CreateTextChannel
+  AS a signed in user
+  I want to create a text channel
 
-  As a signed in user
-  i want to create a text channel
 
-  Background:
-    And I am on the main page
+  Scenario: Click 'Create text channel' button
+    Given I am signed in with username 'USER' and password 'PASSWORD'
+    And I am on the 'main' page
+    When I press the 'Create text channel' button
+    Then I am on the 'Create text channel' page
 
-  Scenario: click "create text channel" button
-    Given I am signed in with username "USER" and password "PASSWORD"
-    And I am on the "main" page
-    When I press the "create text channel" button
-    Then I am on the "create text channel" page
-
-  Scenario: fill out data
-    Given I am signed in with username "USER" and password "PASSWORD"
-    And I am on the "create text channel" page
-    I have to fill out the "name" field
-    And I can fill out the "description" field
-    When I press the "save" button
+  Scenario: Fill out data
+    Given I am on the 'Create text channel' page
+    Then I have to fill out the 'name' field
+    And I can fill out the 'description' field
+    When I press the 'Save' button
     Then a confirmation Dialog is shown
-    Then I am on the "text channel" page
+    Then I am on the 'Text channel' page
 ```
 
 ## 2.2 Alternative Flows
