@@ -23,6 +23,8 @@ Every host of a server can create a text channel
 
 
 ### 2.1.3 Narrative
+[Current feature file](https://github.com/LorenzSeufert/CeangalMessenger---Code/blob/master/src/test/resources/cucumber/CreateTextChannel.feature)
+
 ```gherkin
 Feature: CreateTextChannel
   AS a signed in user
