@@ -23,6 +23,7 @@ Edit the information in the user profile which is shown on the user page, such a
 
 
 ### 2.1.3 Narrative
+[Current feature file](https://github.com/LorenzSeufert/CeangalMessenger---Code/blob/master/src/test/resources/cucumber/EditUserProfile.feature)
 ```gherkin
 Feature: EditUserProfile
   AS a signed in user
