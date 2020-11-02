@@ -20,40 +20,36 @@ Edit the information in the user profile which is shown on the user page, such a
 ![Organization Application Activity Diagram](../Diagrams/EditUserProfileActivityDiagramm.png)
 
 ### 2.1.2 Mock-up
-![Create Operation Form Wireframe](../Pictures/Wireframes/CreateOperation.png)
+
 
 ### 2.1.3 Narrative
 ```gherkin
-Feature: edit user profile
+Feature: EditUserProfile
+  AS a signed in user
+  I want to edit my user profile
 
-  As a signed in user
-  i want to edit my user profile
+  Scenario Outline: Edit profile
+    Given The user is logged in
+    Given User is on the profile page
+    When I click the button 'Edit profile'
+    Then Redirect to the 'edit' page
+    Then I can change my description
+    And I can change my nickname
+    When I upload a picture of <format>
+    And I click the button 'Update profile'
+    Then <status>-Popup with <message>
 
-  Background:
-    And I am on the main page
+    Examples:
+      | format | status | message         |
+      | png    | OK     | Profile updated |
+      | jpeg   | OK     | Profile updated |
+      | gif    | ERROR  | Invalid format  |
 
-  Scenario: open user page
-    Given I am signed in with username "USER" and password "PASSWORD"
+  Scenario: Open user page
+    Given I am signed in with username 'USER' and password 'PASSWORD'
     And I am on the "main" page
     When I press the "user" button
-    Then I am on the "user" page
-
-  Scenario: edit user page
-    Given I am signed in with username "USER" and password "PASSWORD"
-    And I am on the "user" page
-    When I click the "edit" button
-    I get redirected to the "edit" page
-    I can upload a new profile picture
-    And I can change my nickname
-    And I can change my description
-    When I press the "save" button
-    Then a confirmation Dialog is shown
-    Then I am on the "user" page again
-
-  Scenario: enter invalid picture
-  If the uploaded picture is not png, jpeg
-  Then a error message is shown
-  And the process is being canceled
+    Then I get on the "user" page
 ```
 
 ## 2.2 Alternative Flows
