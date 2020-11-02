@@ -20,7 +20,7 @@ Every host of a server can create a text channel
 ![Organization Application Activity Diagram](../Diagrams/CreateTextChannelDiagramm.png)
 
 ### 2.1.2 Mock-up
-![Create Operation Form Wireframe](../Pictures/Wireframes/CreateOperation.png)
+
 
 ### 2.1.3 Narrative
 ```gherkin
