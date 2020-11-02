@@ -3,10 +3,10 @@ Create user profile
 
 ## 1.1 Brief Description
 Create the user profile after registration with username, password and email. The following informations have to displayed:
--nickname
--picture
--age
--description
+- nickname
+- picture
+- age
+- description
 
 # 2 Flow of Events
 ## 2.1 Basic Flow
