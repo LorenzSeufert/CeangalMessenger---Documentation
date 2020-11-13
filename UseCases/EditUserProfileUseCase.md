@@ -17,7 +17,7 @@ Edit the information in the user profile which is shown on the user page, such a
 - Redirect on user page
 
 ### 2.1.1 Activity Diagram
-![Organization Application Activity Diagram](../Diagrams/EditUserProfileActivityDiagramm.png)
+![Organization Application Activity Diagram](../Diagrams/Activity%20Diagrams/EditUserProfileActivityDiagram.png)
 
 ### 2.1.2 Mock-up
 
