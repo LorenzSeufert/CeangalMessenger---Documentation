@@ -63,7 +63,7 @@ Process, Deployment, Implementation and Data views.
 
 ## 2. Architectural Representation
 
-We are using Electron for the client and Kotlin for the Server implementation. Our database will be made with MariaDB.
+We are using Electron for the client and Kotlin for the Server implementation. Our database will be made with MariaDB. Spring will be used for the communication between the UI and the database.
 
 ## 3. Architectural Goals and Constraints
 
