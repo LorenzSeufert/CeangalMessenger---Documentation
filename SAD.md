@@ -78,11 +78,9 @@ awesome alternative to Java. For our database we are using MariaDB.
 
 In the following you can see Activity Diagrams for two Use Cases:
 
-- Create Text Channel:
-    - ![Acitvity Diagram](Diagrams/Activity Diagrams/CreateTextChannelDiagram.png)
+![Acitvity Diagram](Diagrams/Activity Diagrams/CreateTextChannelDiagram.png)
 
-- Edit User Profile:
-    - ![Activity Diagram2](Diagrams/Activity Diagrams/EditUserProfileActivityDiagram.png)
+![Activity Diagram2](Diagrams/Activity Diagrams/EditUserProfileActivityDiagram.png)
 
 ## 5. Logical View
 
