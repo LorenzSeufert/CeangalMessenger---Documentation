@@ -43,6 +43,7 @@ dependencies.
 | ----------- | -------------------------------------- |
 | HTML        | Hypertext Markup Language              |
 | CSS         | Cascading Style Sheets                 |
+| MVC         | Model View Controller                  |
 | n/a         | not applicable                         |
 
 ### 1.4 References
@@ -66,9 +67,12 @@ We are using Electron for the client and Kotlin for the Server implementation. O
 
 ## 3. Architectural Goals and Constraints
 
-We divided our Project in Frontend and Backend. For the Frontend we are using the Electron Framework, which allows us to
-implement nice Desktop Applications with HTML, CSS and JavaScript. In the Backend and Server we are using Kotlin. An
-awesome alternative to Java. For our database we are using MariaDB.
+For the Frontend we are using the Electron Framework, which allows us to implement nice Desktop Applications with HTML,
+CSS and JavaScript.
+
+In the Backend and Server we are using Kotlin with the Spring Framework.
+
+For our database we are using MariaDB.
 
 ## 4. Use-Case View
 
@@ -78,17 +82,21 @@ awesome alternative to Java. For our database we are using MariaDB.
 
 In the following you can see Activity Diagrams for two Use Cases:
 
+-Create Text Channel Diagram:
+
 ![Acitvity Diagram](Diagrams/Activity%20Diagrams/CreateTextChannelDiagram.png)
+
+-Edit User Profile Diagram:
 
 ![Activity Diagram2](Diagrams/Activity%20Diagrams/EditUserProfileActivityDiagram.png)
 
 ## 5. Logical View
 
-TODO
+We are using the MVC Architecture for our project.
 
 ### 5.1 Overview
 
-TODO
+![MVC](Diagrams/MVC%20Diagram/MVC.png)
 
 ### 5.2 Architecturally Significant Design Packages
 
@@ -116,7 +124,7 @@ TODO
 
 ## 9. Data View
 
-TODO
+![ER-Diagram](Diagrams/Database%20Model/CeangalDB%20ER-Model%20v%202.png)
 
 ## 10. Size and Performance
 
