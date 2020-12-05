@@ -82,7 +82,7 @@ In the following you can see Activity Diagrams for two Use Cases:
     - ![Acitvity Diagram](Diagrams/Activity Diagrams/CreateTextChannelDiagram.png)
 
 - Edit User Profile:
-    - ![Activity Diagram](Diagrams/Activity Diagrams/EditUserProfileActivityDiagram.png)
+    - ![Activity Diagram2](Diagrams/Activity Diagrams/EditUserProfileActivityDiagram.png)
 
 ## 5. Logical View
 
