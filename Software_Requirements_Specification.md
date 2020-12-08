@@ -1,7 +1,5 @@
 # Ceangal-Messenger -- Software Requirements Specification
 
-## Table of Contents
-
 - [1. Introduction](#1-introduction)
 
     - [1.1 Purpose](#11-purpose)
@@ -13,66 +11,46 @@
 - [2. Overall Description](#2-overall-description)
 
     - [2.1 Vision](#21-vision)
-    - [2.2 Product perspective](#22-product-perspective)
-    - [2.3 User characteristics](#23-user-characteristics)
-    - [2.4 Dependencies](#24-dependencies)
+    - [2.2 Use Case Diagram](#22-use-case-diagram)
+    - [2.3 Technology Stack](#23-technology-stack)
 
 - [3. Specific Requirements](#3-specific-requirements)
 
-    - [3.1 Functionality � Data Backend](#31-functionality--data-backend)
+    - [3.1 Functionality](#31-functionality)
 
-        - [3.1.1 Read data given over API endpoints](#311-read-data-given-over-api-endpoints)
-        - [3.1.2 Parse data](#312-parse-data)
-        - [3.1.3 Provide data](#313-provide-data)
+        - [3.1.1 Use Cases](#311-use-cases)
+            - [3.1.1.1 Add Friend](#3111-add-friend)
+            - [3.1.1.2 Create Text Channel](#3112-create-text-channel)
+            - [3.1.1.3 Create User Profile](#3113-create-user-profile)
+            - [3.1.1.4 Edit User Profile](#3114-edit-user-profile)
+            - [3.1.1.5 Host Local Server](#3115-host-local-server)
 
-    - [3.2 Functionality � User Interface](#32-functionality--user-interface)
+    - [3.2 Usability](#32-usability)
 
-        - [3.2.1 User system](#321-user-system)
-        - [3.2.3 Flashcard boxes](#323-flashcard-boxes)
-        - [3.2.4 Flashcards](#324-flashcards)
-        - [3.2.5 Statistics](#325-statistics)
+    - [3.3 Reliability](#33-reliability)
 
-    - [3.3 Usability](#33-usability)
+    - [3.4 Performance](#34-performance)
 
-    - [3.4 Reliability](#34-reliability)
+    - [3.5 Supportability](#35-supportability)
 
-        - [3.4.1 Availability](#341-availability)
-        - [3.4.2 MTBF, MTTR](#342-mtbf-mttr)
-        - [3.4.3 Accuracy](#343-accuracy)
-        - [3.4.4 Bug classes](#344-bug-classes)
+    - [3.6 Design Constraints](#36-design-constraints)
 
-    - [3.5 Performance](#35-performance)
+    - [3.7 Online User Documentation and Help System Requirements](#37-online-user-documentation-and-help-system-requirements)
 
-        - [3.5.1 Response time](#351-response-time)
-        - [3.5.2 Throughput](#352-throughput)
-        - [3.5.3 Capacity](#353-capacity)
-        - [3.5.4 Resource utilization](#354-resource-utilization)
+    - [3.8 Purchased Components](#38-purchased-components)
 
-    - [3.6 Supportability](#36-supportability)
+    - [3.9 Interfaces](#39-interfaces)
 
-    - [3.7 Design Constraints](#37-design-constraints)
+        - [3.9.1 User Interfaces](#391-user-interfaces)
+        - [3.9.2 Hardware Interfaces](#392-hardware-interfaces)
+        - [3.9.3 Software Interfaces](#393-software-interfaces)
+        - [3.9.4 Communications Interfaces](#394-communications-interfaces)
 
-        - [3.7.1 Development tools](#371-development-tools)
-        - [3.7.2 Spring Boot](#372-spring-boot)
-        - [3.7.3 ReactJS](#373-reactjs)
-        - [3.7.4 Supported Platforms](#374-supported-platforms)
+    - [3.10 Licensing Requirements](#310-licensing-requirements)
 
-    - [3.8 Online User Documentation and Help System Requirements](#38-online-user-documentation-and-help-system-requirements)
+    - [3.11 Legal, Copyright and other Notices](#311-legal-copyright-and-other-notices)
 
-    - [3.9 Purchased Components](#39-purchased-components)
-
-    - [3.10 Interfaces](#310-interfaces)
-
-        - [3.10.1 User Interfaces](#3101-user-interfaces)
-        - [3.10.2 Hardware Interfaces](#3102-hardware-interfaces)
-        - [3.10.3 Software Interfaces](#3103-software-interfaces)
-        - [3.10.4 Communications Interfaces](#3104-communications-interfaces)
-
-    - [3.11 Licensing Requirements](#311-licensing-requirements)
-
-    - [3.12 Legal, Copyright and other Notices](#312-legal-copyright-and-other-notices)
-
-    - [3.13 Applicable Standards](#313-applicable-standards)
+    - [3.12 Applicable Standards](#312-applicable-standards)
 
 - [4. Supporting Information](#4-supporting-information)
 
@@ -80,16 +58,13 @@
 
 ### 1.1 Purpose
 
-The project is an alternative to Discord and Teamspeak with self deployable servers, it should prevent your data to be
+This Software Requirements Specification (SRS) describes all specifications for the application "Ceangal-Messenger". The
+project is an alternative to Discord and Teamspeak with self deployable servers, it should prevent your data to be
 stored by other companys.
 
 ### 1.2 Scope
 
-Ceangal Messenger should be able to have a text channel, which the user can create, as well as private messaging. The
-servers should be deployable by the user and all data should be stored there. Each user should be able to create a
-profile with which he can log in and customize his profile. The users should also be able to add friends to their
-profile and be able to adjust their privacy. These profiles should be also deployable. Later on there should also be a
-voice channel.
+The project is going to be realized as a Desktop Application.
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 
@@ -110,180 +85,114 @@ voice channel.
 
 ### 1.5 Overview
 
+The following chapter is an overview about this project. Chapter number three is about the specific requirements and
+goes more in detail. At the end are the supporting informations.
+
 ## 2. Overall Description
 
 ### 2.1 Vision
 
-Ceangal Messenger is a alternative to Discord and Teamspeak with self deployable servers. This is a Project for DHBW
-Karlsruhe from Lorenz Seufert, Lennart Royl, David Bullinger and Fabian Dittebrand.
+Ceangal Messenger is a alternative to Discord and Teamspeak with self deployable servers. Every user has a profile with
+personal information. You should be able to add friends and write with them in a private text Channel. Later on we want
+to implement self deployable servers with voice and text channels.
 
-### 2.2 Product perspective
+### 2.2 Use Case Diagram
 
-### 2.3 User characteristics
+![Use Case Diagram](UseCaseDiagram.png)
 
-### 2.4 Dependencies
+### 2.3 Technology Stack
 
 - Kotlin
 - Electron
+- Bootstrap
+- Spring
+- MariaDB
 
 ## 3. Specific Requirements
 
-### 3.1 Functionality � Data Backend
+### 3.1 Functionality
 
-- client based profiles (with a template)
-- friends over servers
-- chats
-- channels
+In this section you can see our different use cases.
 
-#### 3.1.1 Read data given over API endpoints
+#### 3.1.1 Use Cases
 
-TBD
+##### 3.1.1.1 Add Friend
 
-#### 3.1.2 Parse data
+You can find the use case [here](UseCases/AddFriendUseCase.md)
 
-TBD
+##### 3.1.1.2 Create Text Channel
 
-#### 3.1.3 Provide data
+You can find the use case [here](UseCases/CreateTextChannelUseCase.md)
 
-TBD
+##### 3.1.1.3 Create User Profile
 
-### 3.2 Functionality � User Interface
+You can find the use case [here](UseCases/CreateUserProfileUseCase.md)
 
-- Sign In
-- Log In
-- Create profile form after sign in
-- Create server
-- Join server (at least one but can also be many)
-- Create channel
-- Join channel
+##### 3.1.1.4 Edit User Profile
 
-#### 3.2.1 User system
+You can find the use case [here](UseCases/EditUserProfileUseCase.md)
 
-TBD
+##### 3.1.1.5 Host Local Server
 
-#### 3.2.3 Flashcard boxes
+You can find the use case [here](UseCases/HostLocalServerUseCase.md)
 
-TBD
+### 3.2 Usability
 
-#### 3.2.4 Flashcards
+The app should be easy to understand and minimalistic.
 
-TBD
+### 3.3 Reliability
 
-#### 3.2.5 Statistics
+Hopefully its online everytime.
+
+### 3.4 Performance
+
+It should run on every desktop device.
+
+### 3.5 Supportability
 
 TBD
 
-### 3.3 Usability
+### 3.6 Design Constraints
 
-TBD
+Minimalistic, TBD
 
-### 3.4 Reliability
+### 3.7 Online User Documentation and Help System Requirements
 
-TBD
+You can find out Doku here [GitHub Documentation](https://github.com/LorenzSeufert/CeangalMessenger---Documentation)
 
-#### 3.4.1 Availability
-
-- online
-
-#### 3.4.2 MTBF, MTTR
-
-TBD
-
-#### 3.4.3 Accuracy
-
-TBD
-
-#### 3.4.4 Bug classes
-
-TBD
-
-### 3.5 Performance
-
-TBD
-
-#### 3.5.1 Response time
-
-TBD
-
-#### 3.5.2 Throughput
-
-TBD
-
-#### 3.5.3 Capacity
-
-TBD
-
-#### 3.5.4 Resource utilization
-
-TBD
-
-### 3.6 Supportability
-
-TBD
-
-### 3.7 Design Constraints
-
-TBD
-
-#### 3.7.1 Development tools
-
-- Kotlin
-- Electron (?)
-- Mocha / JUnit
-- YouTrack
-- GitHub
-- InteliJ
-- MariaDB
-
-#### 3.7.2 Spring Boot
+### 3.8 Purchased Components
 
 n/a
 
-#### 3.7.3 ReactJS
-
-n/a
-
-#### 3.7.4 Supported Platforms
-
-- PC
-
-### 3.8 Online User Documentation and Help System Requirements
-
-[GitHub](https://github.com/LorenzSeufert/CeangalMessenger---Documentation)
-
-### 3.9 Purchased Components
+### 3.9 Interfaces
 
 TBD
 
-### 3.10 Interfaces
+#### 3.9.1 User Interfaces
 
 TBD
 
-#### 3.10.1 User Interfaces
+#### 3.9.2 Hardware Interfaces
 
 TBD
 
-#### 3.10.2 Hardware Interfaces
+#### 3.9.3 Software Interfaces
 
 TBD
 
-#### 3.10.3 Software Interfaces
+#### 3.9.4 Communications Interfaces
 
 TBD
 
-#### 3.10.4 Communications Interfaces
+### 3.10 Licensing Requirements
 
 TBD
 
-### 3.11 Licensing Requirements
-
-TBD
-
-### 3.12 Legal, Copyright and other Notices
+### 3.11 Legal, Copyright and other Notices
 
 We do not take responsibilty for any incorrect data or errors in the application.
 
-### 3.13 Applicable Standards
+### 3.12 Applicable Standards
 
 TBD
 
