@@ -1,5 +1,5 @@
 # 1 Use-Case Name
-Edit user profile
+Host local server
 
 ## 1.1 Brief Description
 Host a local server temporally on your device.
