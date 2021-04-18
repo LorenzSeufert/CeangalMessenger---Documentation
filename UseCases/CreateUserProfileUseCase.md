@@ -1,8 +1,10 @@
-# 1 Use-Case Name
-Create user profile
+# 1 Create User Profile
+Use Case to create a user profile
 
 ## 1.1 Brief Description
-Create the user profile after registration with password and email. The following informations have to displayed:
+Create a user profile to register for the application. The following informations have to displayed:
+- E-Mail
+- password 2x
 - nickname
 - picture
 - age
