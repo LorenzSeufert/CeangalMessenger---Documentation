@@ -1,5 +1,5 @@
-# 1 Use-Case Name
-Send friend request
+# 1 Add friend
+Use Case to add a user as friend
 
 ## 1.1 Brief Description
 Send a friend request by searching his or her username and clicking the "Add" button.
