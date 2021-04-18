@@ -1,5 +1,5 @@
-# 1 Use-Case Name
-Edit user profile
+# 1 Edit User Profile
+Use Case to edit the profile
 
 ## 1.1 Brief Description
 Edit the information in the user profile which is shown on the user page, such as:
