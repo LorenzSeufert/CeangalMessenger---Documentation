@@ -32,9 +32,10 @@ The user sends a friend a private text message.
 # 4 Preconditions
 ## 4.1 Login
 The user has to be logged in to the system.
+To see friends, the user has to add them first.
 
 # 5 Postconditions
-To see friends, the user has to add them first.
+(n/a)
 
 # 6 Extension Points
 (n/a)
