@@ -1,5 +1,5 @@
-# 1 Use-Case Name
-Create text channel
+# 1 Create Text Channel
+Use Case to create a text channel
 
 ## 1.1 Brief Description
 Every host of a server can create a text channel
