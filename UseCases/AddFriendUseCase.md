@@ -2,21 +2,24 @@
 Use Case to add a user as friend
 
 ## 1.1 Brief Description
-Send a friend request by searching his or her username and clicking the "Add" button.
+The User is sending a friend request by searching his or her username via the search mask.
+If the username exits, the user can send a friend request by clicking the "Add" button.
 
 # 2 Flow of Events
 ## 2.1 Basic Flow
-- User clicks on friends button
+- User clicks on "friends" button
 - Redirect to friends page
-- User clicks on add friend button
-- Redirect to add friend page
-- User types in the name of the other user
+- User clicks on "add friend" button
+- Redirect to "add friend" page
+- User types in the username of the searched user
+- User presses "Enter"
 - A list is shown of all the users which names contain the entered string
 - Next to the usernames in the list are add buttons
 - User clicks on the add button of the friend he wants to add
 
 ### 2.1.1 Activity Diagram
-(n/a)
+
+![image](https://user-images.githubusercontent.com/56756842/115261514-f9b93280-a133-11eb-9d28-b347d5499bcf.png)
 
 ### 2.1.2 Mock-up
 (n/a)
