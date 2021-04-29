@@ -80,9 +80,9 @@ developers to work from and as a documentation to measure the fullfillment of qu
 | API  | Application Programmable Interface  |
 | CI   | Continuous Integration              |
 | CD   | Continuous Delivery/Deployment      |
-| n/a  | not applicable                      |
+| N/A  | not applicable                      |
 | SRS  | Software Requirements Specification |
-| tbd  | to be determined                    |
+| TBD  | to be determined                    |
 | UI   | User Interface                      |
 | VC   | Version Control                     |
 | TDD  | Test Driven Development             |
