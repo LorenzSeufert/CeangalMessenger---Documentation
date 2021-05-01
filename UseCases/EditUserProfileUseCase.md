@@ -1,30 +1,41 @@
-# 1 Edit User Profile
-Use Case to edit the profile
+# 1 Use-Case Specification: Edit user profile
 
 ## 1.1 Brief Description
+
 Edit the information in the user profile which is shown on the user page, such as:
+
 - profile picture
-- nickname
+- username
 - description
 
+## 1.2 Mockup
+
+TODO
+
+## 1.3 Screenshot
+
+TODO
+
 # 2 Flow of Events
+
 ## 2.1 Basic Flow
-- User clicks on "edit" button
-- Redirect to edit page
-- User edits his data
-- User clicks on "save"
-- Confirmation Dialog is shown
-- Redirect on user page
+
+- User clicks on "Edit profile" button
+- Redirect to "Edit profile" page
+- User changes the data
+- User clicks on "Save" button
+- Confirmation is shown
+- Redirect to "Profile" page
 
 ### 2.1.1 Activity Diagram
-![Organization Application Activity Diagram](../Diagrams/Activity%20Diagrams/EditUserProfileActivityDiagram.png)
 
-### 2.1.2 Mock-up
+![ActivityDiagram](../Diagrams/Activity%20Diagrams/EditUserProfileActivityDiagram.png)
 
+### 2.1.2 .featureFile
 
-### 2.1.3 Narrative
-[Current feature file](https://github.com/LorenzSeufert/CeangalMessenger---Code/blob/master/src/test/resources/cucumber/EditUserProfile.feature)
-```gherkin
+[.feature File EditUserProfile](https://github.com/LorenzSeufert/CeangalMessenger---Code/blob/master/Kotlin-Backend/src/test/resources/cucumber/EditUserProfile.feature)
+
+```Gherkin
 Feature: EditUserProfile
   AS a signed in user
   I want to edit my user profile
@@ -54,17 +65,23 @@ Feature: EditUserProfile
 ```
 
 ## 2.2 Alternative Flows
+
 (n/a)
 
 # 3 Special Requirements
+
 (n/a)
 
 # 4 Preconditions
-## 4.1 Login
-The user has to be logged in to the system.
+
+The user has to be logged in to the application.
 
 # 5 Postconditions
-(n/a)
 
-# 6 Extension Points
-(n/a)
+The user data gets changed.
+
+# 6 Function Points
+
+![FP](../Diagrams/FP%20UseCases/EditUserProfileFP.png)
+
+![ComplexityTable](../FunctionPoints/ComplexityAdjustmentTable.png)

@@ -1,36 +1,51 @@
-# 1 Show Friends
-Shows all your Friends
+# 1 Use-Case Specification: Show friends
 
 ## 1.1 Brief Description
-Shows all the friends you currently have, by clicking on a button.
+
+Shows all the friends you currently have.
+
+## 1.2 Mockup
+
+TODO
+
+## 1.3 Screenshot
+
+TODO
 
 # 2 Flow of Events
+
 ## 2.1 Basic Flow
-- User clicks on friends button
-- Redirect to friends page
+
+- User clicks on "Friends" button
+- Redirect to "Friends" page
 - A list is shown of all friends
 
 ### 2.1.1 Activity Diagram
-(n/a)
 
-### 2.1.2 Mock-up
-(n/a)
+![ActivityDiagram](../Diagrams/Activity%20Diagrams/ShowFriendsActivityDiagram.png)
 
-### 2.1.3 Narrative
-(n/a)
+### 2.1.2 .featureFile
+
+TODO
 
 ## 2.2 Alternative Flows
+
 (n/a)
 
 # 3 Special Requirements
+
 (n/a)
 
 # 4 Preconditions
-## 4.1 Login
-The user has to be logged in to the system.
+
+The user has to be logged in to the application.
 
 # 5 Postconditions
-To see friends, the user has to add them first.
 
-# 6 Extension Points
-(n/a)
+The friends of the user get displayed.
+
+# 6 Function Points
+
+![FP](../Diagrams/FP%20UseCases/ShowFriendsFP.png)
+
+![ComplexityTable](../FunctionPoints/ComplexityAdjustmentTable.png)

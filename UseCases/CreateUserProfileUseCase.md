@@ -1,45 +1,61 @@
-# 1 Create User Profile
-Use Case to create a user profile
+# 1 Use-Case Specification: Create user profile
 
 ## 1.1 Brief Description
-Create a user profile to register for the application. The following informations have to displayed:
+
+Create a user profile to register for the application. The following informations have to be specified:
+
 - E-Mail
 - password 2x
-- nickname
+- username
 - picture
-- age
+- birthdate
 - description
 
+## 1.2 Mockup
+
+TODO
+
+## 1.3 Screenshot
+
+TODO
+
 # 2 Flow of Events
+
 ## 2.1 Basic Flow
-- User clicks on "Create profile" button
-- Redirect to creation page
+
+- User clicks on "Sign Up" button
+- Redirect to "Sign Up" page
 - User inserts his data
-- User clicks on "submit" button
-- Confirmation Dialog is shown if you want to continue
-- Redirect on user profile page
+- User clicks on "Sign Up" button
+- Confirmation Dialog is shown
+- Redirect to "Log In" page
 
 ### 2.1.1 Activity Diagram
-(n/a)
 
-### 2.1.2 Mock-up
-(n/a)
+![AcitivityDiagram](../Diagrams/Activity%20Diagrams/CreateUserProfileActivityDiagram.png)
 
-### 2.1.3 Narrative
-(n/a)
+### 2.1.2 .featureFile
+
+TODO
 
 ## 2.2 Alternative Flows
+
 (n/a)
 
 # 3 Special Requirements
-(n/a)
+
+The user needs a valid email address.
 
 # 4 Preconditions
-## 4.1 Login
-The user has to be logged in to the system.
+
+(n/a)
 
 # 5 Postconditions
-(n/a)
 
-# 6 Extension Points
-(n/a)
+The user is created in the application.
+
+# 6 Function Points
+
+![FP](../Diagrams/FP%20UseCases/CreateUserProfileFP.png)
+
+![ComplexityTable](../FunctionPoints/ComplexityAdjustmentTable.png)

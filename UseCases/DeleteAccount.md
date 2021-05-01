@@ -1,41 +1,57 @@
-# 1 Use-Case Name
-Delete Account
+# 1 Use-Case Specification: Delete account
 
 ## 1.1 Brief Description
+
 Delete the user account completely, so the database entry gets removed.
 
+## 1.2 Mockup
+
+TODO
+
+## 1.3 Screenshot
+
+TODO
+
 # 2 Flow of Events
+
 ## 2.1 Basic Flow
-- User clicks on "edit" button
-- Redirect to edit page
-- User clicks on button "delete Account"
+
+- User clicks on "Edit profile" button
+- Redirect to "Edit profile" page
+- User clicks on button "Delete account"
 - A formula opens with a field for username and password
-- User has to enter username and password and press "delete Account"
-- Dialog with text "Do you really want to delete your account?" and options "continue" and "cancel" is shown
-- User clicks on "continue"
-- Account gets deleted
-- User will be directed to the log in screen with the message "successfully deleted account"
+- User has to enter email and password and press "Delete account"
+- Dialog with text "Do you really want to delete your account?" and options "Continue" and "Cancel" is shown
+- User clicks on "Continue"
+- Account gets deleted and removed from the application
+- User will be redirected to the "Log In" page with a confirmation message
 
 ### 2.1.1 Activity Diagram
 
-### 2.1.2 Mock-up
+![ActivityDiagram](../Diagrams/Activity%20Diagrams/DeleteAccountActivityDiagram.png)
 
+### 2.1.2 .featureFile
 
-### 2.1.3 Narrative
-
+TODO
 
 ## 2.2 Alternative Flows
+
 (n/a)
 
 # 3 Special Requirements
+
 (n/a)
 
 # 4 Preconditions
-## 4.1 Login
-The user has to be logged in to the system.
+
+The user has to be logged in to the application.
 
 # 5 Postconditions
-(n/a)
 
-# 6 Extension Points
-(n/a)
+All user data gets removed from the application.
+
+# 6 Function Points
+
+![FP](../Diagrams/FP%20UseCases/DeleteAccountFP.png)
+
+![ComplexityTable](../FunctionPoints/ComplexityAdjustmentTable.png)
