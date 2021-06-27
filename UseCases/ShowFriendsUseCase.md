@@ -4,13 +4,9 @@
 
 Shows all the friends you currently have.
 
-## 1.2 Mockup
+## 1.2 Mockup/Screenshot
 
-TODO
-
-## 1.3 Screenshot
-
-TODO
+![Screenshot](../Diagrams/Screenshots/ShowFriendsScreenshot.png)
 
 # 2 Flow of Events
 

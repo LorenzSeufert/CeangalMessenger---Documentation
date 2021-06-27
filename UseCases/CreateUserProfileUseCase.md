@@ -11,13 +11,9 @@ Create a user profile to register for the application. The following information
 - birthdate
 - description
 
-## 1.2 Mockup
+## 1.2 Mockup/Screenshot
 
-TODO
-
-## 1.3 Screenshot
-
-TODO
+![Screenshot](../Diagrams/Screenshots/CreateProfileScreenshot.png)
 
 # 2 Flow of Events
 

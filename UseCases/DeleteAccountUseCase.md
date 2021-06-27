@@ -4,13 +4,11 @@
 
 Delete the user account completely, so the database entry gets removed.
 
-## 1.2 Mockup
+## 1.2 Mockup/Screenshot
 
-TODO
+![Screenshot](../Diagrams/Screenshots/DeleteAccountScreenshot1.png)
 
-## 1.3 Screenshot
-
-TODO
+![Screenshot](../Diagrams/Screenshots/DeleteAccountScreenshot2.png)
 
 # 2 Flow of Events
 

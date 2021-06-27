@@ -4,13 +4,9 @@
 
 The user sends a friend a private text message.
 
-## 1.2 Mockup
+## 1.2 Mockup/Screenshot
 
-TODO
-
-## 1.3 Screenshot
-
-TODO
+![Screenshot](../Diagrams/Screenshots/SendFriendMessageScreenshot.png)
 
 # 2 Flow of Events
 

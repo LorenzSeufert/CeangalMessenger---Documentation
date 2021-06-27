@@ -4,13 +4,9 @@
 
 The user edits a created text channel, like the name, members, description.
 
-## 1.2 Mockup
+## 1.2 Mockup/Screenshot
 
-TODO
-
-## 1.3 Screenshot
-
-TODO
+![Screenshot](../Diagrams/Screenshots/CreateTextChannelScreenshot.png)
 
 # 2 Flow of Events
 

@@ -8,13 +8,9 @@ Every user can create a text channel with multiple friends
 - The creator can add a description to the text channel
 - The creator has to add the friends to the text channel
 
-## 1.2 Mockup
+## 1.2 Mockup/Screenshot
 
-TODO
-
-## 1.3 Screenshot
-
-TODO
+![Screenshot](../Diagrams/Screenshots/CreateTextChannelScreenshot.png)
 
 # 2 Flow of Events
 

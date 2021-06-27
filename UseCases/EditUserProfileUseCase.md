@@ -8,13 +8,9 @@ Edit the information in the user profile which is shown on the user page, such a
 - username
 - description
 
-## 1.2 Mockup
+## 1.2 Mockup/Screenshot
 
-TODO
-
-## 1.3 Screenshot
-
-TODO
+![Screenshot](../Diagrams/Screenshots/EditUserProfileScreenshot.png)
 
 # 2 Flow of Events
 

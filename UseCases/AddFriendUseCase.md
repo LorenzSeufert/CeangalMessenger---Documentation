@@ -5,13 +5,11 @@
 The User is sending a friend request by searching his or her username via the search mask on the add friend page. If the
 username exits, the user can send a friend request by clicking the "Add" button.
 
-## 1.2 Mockup
+## 1.2 Mockup/Screenshot
 
-TODO
+![Screenshot](../Diagrams/Screenshots/AddFriendScreenshot1.png)
 
-## 1.3 Screenshot
-
-TODO
+![Screenshot](../Diagrams/Screenshots/AddFriendScreenshot2.png)
 
 # 2 Flow of Events
 
