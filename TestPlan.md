@@ -102,7 +102,7 @@ developers to work from and as a documentation to measure the fullfillment of qu
 | [UC7 Send private message](./UseCases/SendFriendsPrivateTextMessageUseCase.md) | Ceangal Team              |
 | [UC8 Show friends](./UseCases/ShowFriendsUseCase.md)                           | Ceangal Team              |
 | [Test Plan](./TestPlan.md)                                                     | Ceangal Team              |
-| [SRS](./Software_Requirements_Specification.md)                                | Ceangal Team              |
+| [SRS](SRS.md)                                | Ceangal Team              |
 | [SAD](./SAD.md)                                                                | Ceangal Team              |
 
 ### 1.6 Document Structure
