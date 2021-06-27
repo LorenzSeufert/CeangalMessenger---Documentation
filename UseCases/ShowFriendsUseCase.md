@@ -22,7 +22,28 @@ Shows all the friends you currently have.
 
 ### 2.1.2 .featureFile
 
-TODO
+[.feature File ShowFriends](https://github.com/LorenzSeufert/CeangalMessenger---Code/blob/master/Kotlin-Backend/src/test/resources/cucumber/ShowFriends.feature)
+
+```Gherkin
+Feature: ShowFriends
+
+  Scenario: User has no friends
+    Given the user is on the profile page
+    And the user is logged in
+    When the user clicks on the friends page in the navbar
+    Then the user sees the friends page with his friend list
+    When the user has no friends added
+    Then no users get displayed in the friendlist
+
+
+  Scenario: User has friends added
+    Given the user is on the profile page
+    And the user is logged in
+    When the user clicks on the friends page in the navbar
+    Then the user sees the friends page with his friend list
+    When the user has already friends added
+    Then all friends get displayed with name and description
+```
 
 ## 2.2 Alternative Flows
 

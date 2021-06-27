@@ -27,7 +27,7 @@ The user sends a friend a private text message.
 
 ### 2.1.2 .featureFile
 
-TODO
+(n/a)
 
 ## 2.2 Alternative Flows
 

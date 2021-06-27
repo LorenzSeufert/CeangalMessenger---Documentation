@@ -27,7 +27,7 @@ The user edits a created text channel, like the name, members, description.
 
 ### 2.1.2 .featureFile
 
-TODO
+(n/a)
 
 ## 2.2 Alternative Flows
 
