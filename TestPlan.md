@@ -115,7 +115,7 @@ n/a
 
 Testing serves to ensure that the written code does what it is intended to do. It also prevents future code changes to
 break existing functionality unnoticed. In the context of integration it can also prevent broken software states to be
-merged into secured VC branches
+merged into secured VC branches.
 
 ### 2.2 Evaluation Mission
 
@@ -129,7 +129,7 @@ stability for our application.
 
 ## 3. Target Test Items
 
-- Electron frontend
+- (Electron frontend)
 - Server backend (API)
 
 ## 4. Outline of Planned Tests
@@ -177,7 +177,7 @@ are tested.
 |Technique              | Implement test methods using JUnit and MochaJS                            |
 |Oracles                | Test execution logs results to the command line in IDE and GitHub Actions |
 |Required Tools         | JUnit 5 and MochaJS Dependencies in Frontend and Backend                  |
-|Success Criteria       | All tests pass in IDE and GitHub Actions                                  |
+|Success Criteria       | All tests pass in IDE and GitHub Actions.                                  |
 |Special Considerations | -                                                                         |
 
 #### 5.1.2 Functional Testing
@@ -190,7 +190,7 @@ Functional testing is to develop test cases to test the behavior of software's f
 |Technique              | Writing Gherkin `.feature` files with clearly defined steps and the expected result. Written in simple english.|
 |Oracles                | Test execution logs results to the command line in IDE and GitHub Actions |
 |Required Tools         | Dependencies of Cucumber and JUnit to execute tests                  |
-|Success Criteria       | All cucumber tests pass.
+|Success Criteria       | All cucumber tests pass. All tests pass in IDE and GitHub Actions.
 |Special Considerations | - |
 
 #### 5.1.3 API Testing
@@ -204,7 +204,7 @@ API of the Backend behave as expected.
 |Technique              | For every important endpoint of the API an test exists  |            
 |Oracles                | Test execution logs results to the command line in IDE and GitHub Actions |
 |Required Tools         | JUnit                                    |
-|Success Criteria       | All tests of the endpoints pass.                               |
+|Success Criteria       | All tests of the endpoints pass. All tests pass in IDE and GitHub Actions.                                |
 |Special Considerations | -                                                                    |
 
 ## 6. Entry and Exit Criteria
@@ -221,31 +221,31 @@ n/a
 
 ## 7. Deliverables
 
-## 7.1 Test Evaluation Summaries
+### 7.1 Test Evaluation Summaries
 
-TODO
+n/a
 
-## 7.2 Reporting on Test Coverage
+### 7.2 Reporting on Test Coverage
 
-TODO
+n/a
 
-## 7.3 Perceived Quality Reports
+### 7.3 Perceived Quality Reports
 
-TODO
+n/a
 
-## 7.4 Incident Logs and Change Requests
+### 7.4 Incident Logs and Change Requests
 
-TODO
+Incidents and Change Requests are handled via our project management tool YouTrack.
 
-## 7.5 Smoke Test Suite and Supporting Test Scripts
+### 7.5 Smoke Test Suite and Supporting Test Scripts
 
-TODO
+n/a
 
 ## 8. Testing Workflow
 
 1) Local testing in the IDE
-2) Commit and Push triggers build and test exection in the CI/CD Pipeline
-3) Each PR triggers the pipeline (build and test)
+2) Commit and Push triggers build and test execution in the CI Pipeline (GitHub Actions)
+3) Each pull request triggers the pipeline again (build and test)
 
 ## 9. Environmental Needs
 
@@ -298,7 +298,7 @@ We want to keep over 25% code coverage.
 
 ## 12. Risks, Dependencies, Assumptions, and Constraints
 
-TODO
+n/a
 
 ## 13. Management Process and Procedures
 
