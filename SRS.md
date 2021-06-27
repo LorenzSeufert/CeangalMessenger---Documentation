@@ -23,7 +23,10 @@
             - [3.1.1.2 Create Text Channel](#3112-create-text-channel)
             - [3.1.1.3 Create User Profile](#3113-create-user-profile)
             - [3.1.1.4 Edit User Profile](#3114-edit-user-profile)
-            - [3.1.1.5 Host Local Server](#3115-host-local-server)
+            - [3.1.1.5 Host Local Server](#3115-delete-account)
+            - [3.1.1.6 Edit Text Channel](#3116-edit-text-channel)
+            - [3.1.1.7 Send private message](#3117-send-friend-private-message)
+            - [3.1.1.8 Show friends](#3118-show-friends)
 
     - [3.2 Usability](#32-usability)
 
@@ -58,13 +61,17 @@
 
 ### 1.1 Purpose
 
-This Software Requirements Specification (SRS) describes all specifications for the application "Ceangal-Messenger". The
-project is an alternative to Discord and Teamspeak with self deployable servers, it should prevent your data to be
-stored by other companys.
+This Software Requirements Specification (SRS) describes all specifications for the application "Ceangal Messenger". The
+project is a little social chat app with self deployable servers, it should prevent your data to be stored by other
+companys.
 
 ### 1.2 Scope
 
-The project is going to be realized as a Desktop Application.
+The project is going to be realized as a Desktop Application. Some functions are:
+
+- Add friends
+- Personal user profile
+- Chat with friends
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 
@@ -81,7 +88,7 @@ The project is going to be realized as a Desktop Application.
 | [Blog](https://ceangalmessenger.wordpress.com/)                                                       | 15/10/2020 |
 | [GitHub --Code](https://github.com/LorenzSeufert/CeangalMessenger---Code)                             | 15/10/2020 |
 | [GitHub --Documentation](https://github.com/LorenzSeufert/CeangalMessenger---Documentation)           | 15/10/2020 |
-| [Use Case Diagram](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/usecase.png)                                                                                  | 15/10/2020 |
+| [Use Case Diagram](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/UseCaseDiagram.png)                                                                                  | 15/10/2020 |
 
 ### 1.5 Overview
 
@@ -92,9 +99,9 @@ goes more in detail. At the end are the supporting informations.
 
 ### 2.1 Vision
 
-Ceangal Messenger is a alternative to Discord and Teamspeak with self deployable servers. Every user has a profile with
-personal information. You should be able to add friends and write with them in a private text Channel. Later on we want
-to implement self deployable servers with voice and text channels.
+Ceangal Messenger is a little social chat app with self deployable servers. Every user has a profile with personal
+information. You should be able to add friends and write with them in a private text Channel. Later on we want to
+implement self deployable servers with voice and text channels.
 
 ### 2.2 Use Case Diagram
 
@@ -103,10 +110,10 @@ to implement self deployable servers with voice and text channels.
 ### 2.3 Technology Stack
 
 - Kotlin
-- Electron
+- Electron and ExpressJs/NodeJs
 - Bootstrap
-- Spring
-- MariaDB
+- Spring Boot and Spring Data JPA
+- MariaDB adn H2 DB
 
 ## 3. Specific Requirements
 
@@ -118,43 +125,63 @@ In this section you can see our different use cases.
 
 ##### 3.1.1.1 Add Friend
 
-You can find the use case [here](UseCases/AddFriendUseCase.md)
+You can find the use
+case [here](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/UseCases/AddFriendUseCase.md)
 
 ##### 3.1.1.2 Create Text Channel
 
-You can find the use case [here](UseCases/CreateTextChannelUseCase.md)
+You can find the use
+case [here](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/UseCases/CreateTextChannelUseCase.md)
 
 ##### 3.1.1.3 Create User Profile
 
-You can find the use case [here](UseCases/CreateUserProfileUseCase.md)
+You can find the use
+case [here](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/UseCases/CreateUserProfileUseCase.md)
 
 ##### 3.1.1.4 Edit User Profile
 
-You can find the use case [here](UseCases/EditUserProfileUseCase.md)
+You can find the use
+case [here](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/UseCases/EditUserProfileUseCase.md)
 
-##### 3.1.1.5 Host Local Server
+##### 3.1.1.5 Delete Account
 
-You can find the use case [here](UseCases/HostLocalServerUseCase.md)
+You can find the use
+case [here](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/UseCases/DeleteAccountUseCase.md)
+
+##### 3.1.1.6 Edit Text Channel
+
+You can find the use
+case [here](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/UseCases/EditTextChannelUseCase.md)
+
+##### 3.1.1.7 Send friend private message
+
+You can find the use
+case [here](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/UseCases/SendFriendsPrivateTextMessageUseCase.md)
+
+##### 3.1.1.8 Show friends
+
+You can find the use
+case [here](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/UseCases/ShowFriendsUseCase.md)
 
 ### 3.2 Usability
 
-The app should be easy to understand and minimalistic.
+The app should be easy to understand and be minimalistic.
 
 ### 3.3 Reliability
 
-Hopefully its online everytime.
+The backend should be available any time.
 
 ### 3.4 Performance
 
-It should run on every desktop device.
+It should run on every desktop device and have short loading times.
 
 ### 3.5 Supportability
 
-TBD
+You can easily start your own backend server. It depends on you if the service is available or not.
 
 ### 3.6 Design Constraints
 
-Minimalistic, TBD
+It should be minimalistic and lightweight.
 
 ### 3.7 Online User Documentation and Help System Requirements
 
@@ -162,39 +189,38 @@ You can find out Doku here [GitHub Documentation](https://github.com/LorenzSeufe
 
 ### 3.8 Purchased Components
 
-n/a
+We only use open-source software so nothing is purchased
 
 ### 3.9 Interfaces
 
-TBD
-
 #### 3.9.1 User Interfaces
 
-TBD
+The interaction with the user is provided through the Electron application.
 
 #### 3.9.2 Hardware Interfaces
 
-TBD
+(n/a)
 
 #### 3.9.3 Software Interfaces
 
-TBD
+We want to use a REST API to communicate between client and backend server.
 
 #### 3.9.4 Communications Interfaces
 
-TBD
+(n/a)
 
 ### 3.10 Licensing Requirements
 
-TBD
+(n/a)
 
 ### 3.11 Legal, Copyright and other Notices
 
-We do not take responsibilty for any incorrect data or errors in the application.
+The logo is licensed to the Ceangal Messenger Team. We do not take responsibilty for any incorrect data or errors in the
+application.
 
 ### 3.12 Applicable Standards
 
-TBD
+We will follow the standard code conventions for JavaScript and Kotlin.
 
 ## 4. Supporting Information
 

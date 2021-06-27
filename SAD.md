@@ -51,7 +51,7 @@ dependencies.
 | [Code Repository](https://github.com/LorenzSeufert/CeangalMessenger---Code)                                                          | 2020-12-03   | Ceangal-Messenger Team             |
 | [Documentation Repository](https://github.com/LorenzSeufert/CeangalMessenger---Documentation)                                                      | 2020-12-03   | Ceangal-Messenger Team              |
 | [Use Cases](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/tree/main/UseCases)                                     | 2020-12-03  | Ceangal-Messenger Team  |
-| [SRS](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/Software_Requirements_Specification.md)                                                      | 2020-12-03   | Ceangal-Messenger Team              |
+| [SRS](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/SRS.md)                                                      | 2020-12-03   | Ceangal-Messenger Team              |
 
 ### 1.5 Overview
 
@@ -90,7 +90,7 @@ provided by Kotlin through named arguments.
 ### 4.1 Use-Case Realizations
 
 Each use case is documented by itself you can find it in
-our [SRS](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/Software_Requirements_Specification.md)
+our [SRS](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/SRS.md)
 or [here](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/tree/main/UseCases)
 
 ## 5. Logical View
