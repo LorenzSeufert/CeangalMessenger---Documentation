@@ -14,15 +14,12 @@
     - [Use-Case Realizations](#41-use-case-realizations)
 - [Logical View](#5-logical-view)
     - [Overview](#51-overview)
-    - [Architecturally Significant Design Packages](#52-architecturally-significant-design-packages)
 - [Process View](#6-process-view)
 - [Deployment View](#7-deployment-view)
-- [Implementation View](#8-implementation-view)
-    - [Overview](#81-overview)
-    - [Layers](#82-layers)
-- [Data View](#9-data-view)
-- [Size and Performance](#10-size-and-performance)
-- [Quality](#11-qualitymetrics)
+- [Data View](#8-data-view)
+- [Size and Performance](#9-size-and-performance)
+- [Quality](#10-qualitymetrics)
+- [Tools](#11-tools)
 
 ## 1. Introduction
 
@@ -34,15 +31,15 @@ decisions which have been made on the system.
 
 ### 1.2 Scope
 
-The document describes the architecture of the Ceangal-Messenger project. Including Use Cases, structure and
+The document describes the architecture of the Ceangal Messenger project. Including Use Cases, structure and
 dependencies.
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 
 | Abbrevation | Description                            |
 | ----------- | -------------------------------------- |
-| HTML        | Hypertext Markup Language              |
-| CSS         | Cascading Style Sheets                 |
+| REST        | Representational state transfer              |
+| API         | Application programming interface                |
 | MVC         | Model View Controller                  |
 | n/a         | not applicable                         |
 
@@ -63,16 +60,28 @@ Process, Deployment, Implementation and Data views.
 
 ## 2. Architectural Representation
 
-We are using Electron for the client and Kotlin for the Server implementation. Our database will be made with MariaDB. Spring will be used for the communication between the UI and the database.
+![Representation](Diagrams/MVC%20Diagram/ArchitecturalRepresentation.png)
 
 ## 3. Architectural Goals and Constraints
 
+### Frontend
+
 For the Frontend we are using the Electron Framework, which allows us to implement nice Desktop Applications with HTML,
-CSS and JavaScript.
+CSS and JavaScript. And we use NodeJs and ExpressJs to make requests to our REST API
 
-In the Backend and Server we are using Kotlin with the Spring Framework.
+### Backend
 
-For our database we are using MariaDB.
+In the Backend and Server we are using Kotlin with the Spring Framework. We use Spring Boot to create a REST API and
+Spring Data JPA to communicate with the database.
+
+### Database
+
+For our database we are using MariaDB or an H2 Database in the development process.
+
+### Patterns
+
+We use a lot of patterns provided by our frameworks like Singleton, MVC, Proxy, etc. Also we use the builder pattern
+provided by Kotlin through named arguments.
 
 ## 4. Use-Case View
 
@@ -80,56 +89,63 @@ For our database we are using MariaDB.
 
 ### 4.1 Use-Case Realizations
 
-In the following you can see Activity Diagrams for two Use Cases:
-
--Create Text Channel Diagram:
-
-![Acitvity Diagram](Diagrams/Activity%20Diagrams/CreateTextChannelDiagram.png)
-
--Edit User Profile Diagram:
-
-![Activity Diagram2](Diagrams/Activity%20Diagrams/EditUserProfileActivityDiagram.png)
+Each use case is documented by itself you can find it in
+our [SRS](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/Software_Requirements_Specification.md)
+or [here](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/tree/main/UseCases)
 
 ## 5. Logical View
 
-We are using the MVC Architecture for our project.
+### Frontend
+
+The different pages in the frontend are html/ejs files. These files get loaded and displayed by the Express server
+running in parallel to the Electron Client. This makes it easy to load data in the Frontend from the Backend.
+
+### Backend
+
+The Backend is split into different API endpoints. There are some controller, services and model classes. The controller
+are handling the incoming requests and outgoing responses. The services are processing the requests and access with the
+models the database.
 
 ### 5.1 Overview
 
 ![MVC](Diagrams/MVC%20Diagram/MVC.png)
 
-### 5.2 Architecturally Significant Design Packages
-
-TODO
-
 ## 6. Process View
 
-TODO
+- When the user starts the frontend client, the Express server is starting, to display the pages. By using and clicking
+  through the client the Express server renders the new pages and performs HTTP requests to the backend to get the
+  required user data.
 
 ## 7. Deployment View
 
-TODO
+(n/a)
 
-## 8. Implementation View
+## 8. Data View
 
-TODO
+![ER-Diagram](Diagrams/Database%20Model/ER-Model-Ceangal-NEW.png)
 
-### 8.1 Overview
+## 9. Size and Performance
 
-TODO
+- The frontend is an Electron application, so it's not really lightweight but after the first start there are no real
+  loading times.
 
-### 8.2 Layers
+- The backend can be run on every machine with Java so in the end it depends on the machine how long it takes to handle
+  the requests.
 
-TODO
+## 10. Quality/Metrics
 
-## 9. Data View
+We use GitHub Actions for our CI pipeline. That means every push triggers the tests to make sure that all pushed code
+works correctly. More about testing in
+our [Testplan](https://github.com/LorenzSeufert/CeangalMessenger---Documentation/blob/main/TestPlan.md)
 
-![ER-Diagram](Diagrams/Database%20Model/CeangalDB%20ER-Model%20v%202.png)
+For code metrics we use Codacy. It gives us an overview what we can improve and do better in code style, etc. You can
+find it [here](https://app.codacy.com/gh/LorenzSeufert/CeangalMessenger---Code/dashboard)
 
-## 10. Size and Performance
+## 11. Tools
 
-n/a
+We use these tools for development:
 
-## 11. Quality/Metrics
-
-TODO
+- Version Control with git and [GitHub](https://github.com/LorenzSeufert/CeangalMessenger---Code)
+- Project
+  Management: [YouTrack](https://dhbw-karlsruhe.myjetbrains.com/youtrack/dashboard?id=8b4b5eb2-f674-4c03-8ea6-3c29a0a69b69)
+- IDE: IntelliJ Ultimate
